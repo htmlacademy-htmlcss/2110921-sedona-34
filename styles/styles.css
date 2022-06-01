@@ -194,6 +194,13 @@ body {
   line-height: 26px;
 }
 
+.field {
+  font-family: "PT Sans", sans-serif;
+  font-size: 18px;
+  line-height: 21px;
+  font-weight: 400;
+}
+
 /*Footer*/
 .page-footer {
   background-color: #ffffff;
@@ -259,6 +266,10 @@ body {
 
 .select-control {
   color: #333333;
+  font-family: "PT Sans", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
 }
 
 /*Hotels*/
@@ -316,7 +327,15 @@ body {
   background-color: #F2F2F2;
 }
 
-.show-result,.show-result-change{
+.show-result {
   color: #333333;
   font-weight: 400;
+}
+
+.show-result-change {
+  font-family: "PT Sans", sans-serif;
+  color: #333333;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
 }
