@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link rel="stylesheet" href="styles/styles.css">
   </head>
   <body>
     <header class="main-header">
@@ -40,7 +41,7 @@
 
     <main class="main-index">
       <section class="intro">
-        <h1 class="vusually-hidden">Седона</h1>
+        <h1 class="visually-hidden">Седона</h1>
         <img class="welcome" src="images/welcome-sedona.svg" alt="Добро пожаловать в Седону." width="458" height="352">
       </section>
 
@@ -49,47 +50,61 @@
         <p class="welcome-reasons">Рассмотрим 5 причин, по которым Седона круче, чем Гранд-Каньон!</p>
         <ol class="reasons-list">
           <li class="reasons-item">
+            <div class="blue-block block">
             <h3 class="reasons-title">Настоящий городок</h3>
             <span>— №1 —</span>
-            <p class="reasons-description">Седона — не аттракцион для туристов, там течёт своя жизнь
-              <img class="view-sedona" src="images/sedona-view.jpg" alt="Вид города Седона." width="800" height="384">
-            </p>
+            <p class="reasons-description">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
+            </div>
+            <img class="view-sedona" src="images/sedona-view.jpg" alt="Вид города Седона." width="800" height="384">
             <ul class="details-list">
               <li class="details-item">
-                <h4 class="details-title">Жильё</h4>
-              <p class="details-description">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
-            </li>
-              <li class="details-item">
-                <h4 class="details-title">Еда</h4>
-              <p class="details-description">Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь!</p>
+                <div class="blue-block-light block">
+                  <h4 class="details-title title-black">Жильё</h4>
+                  <p class="details-description">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
+                </div>
               </li>
               <li class="details-item">
-                <h4 class="details-title">Сувениры</h4>
-              <p class="details-description">Не только китайского, но и настоящего местного производства!</p>
+                <div class="white-block block">
+                  <h4 class="details-title title-black">Еда</h4>
+                  <p class="details-description">Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь!</p>
+                </div>
               </li>
-          </ul>
-        </li>
+              <li class="details-item">
+                <div class="blue-block-light block">
+                  <h4 class="details-title title-black">Сувениры</h4>
+                  <p class="details-description">Не только китайского, но и настоящего местного производства!</p>
+                </div>
+              </li>
+            </ul>
+          </li>
           <li class="reasons-item">
+            <div class="blue-block block">
             <h3 class="reasons-title">Там есть мост дьявола</h3>
             <span>— №2 —</span>
-            <p class="reasons-description">Да, по нему можно пройти! Если вы осмелитесь, разумеется
-              <img class="view-canyon" src="images/canyon-view.jpg" alt="Мост дьявола." width="800" height="384">
-            </p>
+            <p class="reasons-description">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
+            </div>
+            <img class="view-canyon" src="images/canyon-view.jpg" alt="Мост дьявола." width="800" height="384">
           </li>
           <li class="reasons-item">
-            <h3 class="reasons-title">Небольшая площадь</h3>
-            <span>— №3 —</span>
-            <p class="reasons-description">Все достопримечательности находятся очень близко</p>
+            <div class="blue-block-light block">
+              <h3 class="reasons-title title-black">Небольшая площадь</h3>
+              <span>— №3 —</span>
+              <p class="reasons-description">Все достопримечательности находятся очень близко</p>
+            </div>
           </li>
           <li class="reasons-item">
-            <h3 class="reasons-title">Красивая дорога</h3>
-            <span>— №4 —</span>
-            <p class="reasons-description">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+            <div class="blue-block-medium block">
+              <h3 class="reasons-title title-black">Красивая дорога</h3>
+              <span>— №4 —</span>
+              <p class="reasons-description">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+            </div>
           </li>
           <li class="reasons-item">
-            <h3 class="reasons-title">Мало туристов</h3>
-            <span>— №5 —</span>
-            <p class="reasons-description">Большинство едет в Гранд Каньон и толпится там</p>
+            <div class="blue-block-light block">
+              <h3 class="reasons-title title-black">Мало туристов</h3>
+              <span>— №5 —</span>
+              <p class="reasons-description">Большинство едет в Гранд Каньон и толпится там</p>
+            </div>
           </li>
         </ol>
       </section>
@@ -99,9 +114,9 @@
         <p class="search-description">Укажите предполагаемые даты поездки,и мы покажем вам лучшие предложения гостиниц в Седоне</p>
         <a class="button button-search" href="#">Поиск гостиницы в Седоне</a>
       </section>
-      <section class="subscribe">
+      <section class="subscribe subscribe-index">
         <h2 class="subscribe-news">Подпишитесь на рассылку</h2>
-        <p>Только полезная информация и никакого спама, честное бойскаутское!</p>
+        <p class="subscribe-text">Только полезная информация и никакого спама, честное бойскаутское!</p>
         <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
           <label class="visually-hidden" for="email-field">Email</label>
           <input class="field" placeholder="Ваш e-mail" id="email-field" type="email" name="subscribe-email" required>
@@ -110,13 +125,13 @@
       </section>
     </main>
 
-    <footer class="page=footer">
+    <footer class="page-footer">
       <section class="footer-social">
         <h2 class="visually-hidden">Мы в социальных сетях</h2>
         <ul class="footer-social-list">
           <li class="footer-social-item">
             <a class="icon icon-vkontakte" href="https://vk.com/htmlacademy">
-              <span class="visually-hidden">Вконтаке</span>
+              <span class="visually-hidden">Вконтакте</span>
             </a>
           </li>
           <li class="footer-social-item">
@@ -140,7 +155,7 @@
       <div class="footer-designer">
         <span class="visually-hidden">Разработчик</span>
         <a class="footer-designer-link" href="https://htmlacademy.ru/">
-          <span class="visually-hidden">Переход на сайт HTML Академии</span>
+          <img class="logo-html-academy" src="images/logo-html-academy.svg" alt="Переход на сайт HTML Академии" width="115" height="34">
         </a>
       </div>
     </footer>
