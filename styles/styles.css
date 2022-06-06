@@ -14,7 +14,15 @@
   font-display: swap;
 }
 
+html {
+  height: 100%;
+}
+
 body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
   font-family: "PT Sans", sans-serif;
   font-size: 18px;
   line-height: 21px;
@@ -22,10 +30,15 @@ body {
   color: #000000;
 }
 
+.page-wrapper {
+  margin: 0 auto;
+  width: 1200px;
+}
+
 .visually-hidden {
   position: fixed;
-  transform: scale(0);
-}
+ transform: scale(0);
+ }
 
 .button {
   font-family: inherit;
@@ -70,9 +83,35 @@ body {
 }
 
 /* Pages */
+.main-container {
+  flex-grow: 1;
+}
+
 .main-header,.page-header {
   background-color: #ffffff;
   color: #000000;
+}
+
+.navigation {
+  display: flex;
+}
+
+.navigation-logo {
+  width: 140px;
+  margin-left: 70px;
+  margin-right: 30px;
+}
+
+.navigation-list {
+  width: 475px;
+  margin: 0;
+  padding: 0;
+}
+
+.navigation-user {
+  width: 295px;
+  margin-right: 70px;
+  margin-left: auto;
 }
 
 .navigation-link {
@@ -93,10 +132,21 @@ body {
   background-repeat: no-repeat;
 }
 
+.welcome {
+  display: block;
+  margin: 0 auto;
+}
+
 /*List*/
 .reasons {
   text-align: center;
 }
+
+.reasons-list {
+  margin: 0;
+  padding: 0;
+}
+
 
 .welcome-description {
   font-weight: 700;
@@ -203,8 +253,28 @@ body {
 
 /*Footer*/
 .page-footer {
+  display: flex;
+  justify-content: space-between;
   background-color: #ffffff;
 }
+
+
+.footer-social-list {
+  margin: 0;
+  padding: 0;
+  width: 142px;
+  margin-left: 70px;
+}
+
+.footer-contacts {
+  width: 720px;
+  text-align: center;
+}
+
+.footer-designer {
+  margin-right: 70px;
+}
+
 
 .footer-contacts-information-phone {
   font-style: normal;
@@ -241,6 +311,22 @@ body {
   color: inherit;
 }
 
+/*Filter*/
+.catalog-filter {
+  display: flex;
+  justify-content: space-between;
+}
+
+.catalog-column-left {
+  width: 366px;
+  margin-left: 70px;
+}
+
+.catalog-column-right {
+  width: 519px;
+  margin-right: 70px;
+}
+
 /* Title */
 .catalog-filter-title {
   font-weight: 700;
@@ -248,13 +334,6 @@ body {
   line-height: 26px;
   text-transform: capitalize;
   color: #ffffff;
-}
-
-/*Label*/
-.control {
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 21px;
 }
 
 .search-result {
