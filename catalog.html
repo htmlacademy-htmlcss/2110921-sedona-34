@@ -129,6 +129,8 @@
         <a href="#" class="button button-present-list">
           <span class="visually-hidden">Показать списком</span>
         </a>
+      </div>
+      <div class="hotels-catalog">
         <ul class="hotel-list">
           <li class="hotel-card">
             <a class="hotel-card-link" href="#" tabindex="-1">
@@ -191,34 +193,36 @@
             <span class="rating">Рейтинг: 5,0</span>
           </li>
         </ul>
-        <ul class="pagination">
-          <li class="pagination-item">
-            <a class="pagination-link pagination-link-current">1</a>
-          </li>
-          <li class="pagination-item">
-            <a class="pagination-link" href="#">2</a>
-          </li>
-          <li class="pagination-item">
-            <a class="pagination-link" href="#">3</a>
-          </li>
-          <li class="pagination-item">
-            <a class="pagination-link" href="#">4</a>
-          </li>
-          <li class="pagination-item">
-            <a class="pagination-link" href="#">...</a>
-          </li>
-          <li class="pagination-item">
-            <a class="pagination-link" href="#">10</a>
-          </li>
-        </ul>
-        <form class="show-result" action="https://echo.htmlacademy.ru/" method="get">
-          <label for="number-items">Гостиниц на странице:</label>
-          <select class="show-result-change" id="number-items">
-            <option value="four">4</option>
-            <option value="eight">8</option>
-            <option value="sixteen">16</option>
-          </select>
-        </form>
+        <div class="pagination-container">
+          <ul class="pagination">
+            <li class="pagination-item">
+              <a class="pagination-link pagination-link-current">1</a>
+            </li>
+            <li class="pagination-item">
+              <a class="pagination-link" href="#">2</a>
+            </li>
+            <li class="pagination-item">
+              <a class="pagination-link" href="#">3</a>
+            </li>
+            <li class="pagination-item">
+              <a class="pagination-link" href="#">4</a>
+            </li>
+            <li class="pagination-item">
+              <a class="pagination-link" href="#">...</a>
+            </li>
+            <li class="pagination-item">
+              <a class="pagination-link" href="#">10</a>
+            </li>
+          </ul>
+          <form class="show-result" action="https://echo.htmlacademy.ru/" method="get">
+            <label for="number-items">Гостиниц на странице:</label>
+            <select class="show-result-change" id="number-items">
+              <option value="four">4</option>
+              <option value="eight">8</option>
+              <option value="sixteen">16</option>
+            </select>
+          </form>
+        </div>
       </div>
       <section class="subscribe subscribe-catalog">
         <h2 class="subscribe-news">Подпишитесь на рассылку</h2>
