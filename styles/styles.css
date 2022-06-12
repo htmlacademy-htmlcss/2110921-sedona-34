@@ -110,7 +110,8 @@ body {
   display: block;
 }
 
-.navigation-list {
+
+.page-navigation {
   display: flex;
   width: 475px;
   margin: 0;
@@ -119,21 +120,25 @@ body {
   flex-wrap: wrap;
   margin-top: 20px;
   margin-left: 17px;
-
 }
 
-/* .navigation-list .navigation-item {
-} */
+.page-navigation-item:not(:last-child) {
+  margin-right: 34px;
+}
 
 .navigation-link-current {
   border-bottom: 2px solid #756257;
 }
 
-.navigation-user {
+.user-navigation {
   display: flex;
   width: 300px;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  flex-wrap: wrap;
   margin-left: auto;
-  margin-top: 0;
+  align-items: center;
 }
 
 
@@ -148,11 +153,11 @@ body {
   text-decoration: none;
   text-transform: capitalize;
   padding-bottom: 19px;
-  margin-right: 34px; /*добавила сюда из класса выше, который ща закоментирован*/
 }
-.navigation-user .navigation-link {
+.user-navigation .navigation-link {
   min-width: 18px;
   min-height: 18px;
+  padding-top: 20px;
 }
 
 
