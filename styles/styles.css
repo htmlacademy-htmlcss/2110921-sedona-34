@@ -191,15 +191,51 @@ body {
   padding-top: 63px;
 }
 
-.container-list {
+.container-list-main{
   display: grid;
-  grid-column: span 3;
-  grid-template-columns: repeat(3, 400px);
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.container-list-first {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+}
+
+.view-sedona {
+  display: block;
+  grid-column: 2 / span 2;
+}
+
+.container-list-second {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.container-list-third {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
 }
 
 .view-canyon {
-  grid-column: span 2;
+  display: block;
+  grid-column: 1 / span 2;
 }
+
+/* .container-list {
+  display: grid;
+  grid-column: span 3;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.view-sedona {
+  display: block;
+  grid-column: 2/ 4;
+}
+
+.view-canyon {
+  display: block;
+  grid-column: span 2;
+} */
 
 .reasons-list {
   margin: 0;
