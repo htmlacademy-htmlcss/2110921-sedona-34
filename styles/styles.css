@@ -83,13 +83,16 @@ body {
 
 .hotel-card-button {
   background-color: #756157;
+  padding: 9px 15px 8px;
 }
 .button-favorites {
   background-color: #82B3D3;
+  padding: 9px 15px 8px;
 }
 
 .button-favorites-added {
   background-color: #7DB54F;
+  padding: 9px 15px 8px;
 }
 
 /* Pages */
@@ -147,7 +150,6 @@ body {
   align-items: center;
 }
 
-
 .navigation-link {
   display: block;
   font-weight: 700;
@@ -164,6 +166,8 @@ body {
   min-width: 18px;
   min-height: 18px;
   padding-top: 20px;
+  padding-left: 12px;
+  padding-right: 12px;
 }
 
 
@@ -209,6 +213,11 @@ body {
   padding: 0;
   list-style-type: none;
 }
+
+.details-item-icon {
+  padding: 79px 85px 81px;
+}
+
 
 .details-description {
   margin: 0;
@@ -492,7 +501,6 @@ body {
 
 .search-result p {
   margin: 0;
-  margin-top: 57px;
 }
 
 .select-control {
@@ -501,23 +509,36 @@ body {
   font-weight: 400;
   font-size: 18px;
   line-height: 21px;
+  margin-right: auto;
 }
 
 /*Hotels*/
 .hotel-card {
   background-color: #ffffff;
+  padding: 20px;
 }
 
 .hotel-list {
+  display: grid;
+  grid-template-columns: repeat(3, 340px);
   margin: 0;
   padding: 0;
+  padding-left: 73px;
+  padding-right: 71px;
   list-style-type: none;
+  column-gap: 18px;
+}
+
+.hotel-card-image {
+  display: block;
 }
 
 /*Link*/
 .hotel-card-link {
+  display: block;
   text-decoration: none;
   color: #000000;
+  margin-bottom: 16px;
 }
 
 /*Title*/
@@ -525,8 +546,14 @@ body {
   font-weight: 700;
   font-size: 24px;
   line-height: 28px;
+  margin: 0;
 }
 
+.card-description {
+  display: grid;
+  grid-template-columns: repeat(2, 140px);
+  gap: 16px 20px;
+}
 
 .hotel-card-type {
   font-weight: 400;
@@ -544,6 +571,11 @@ body {
   line-height: 20px;
   text-transform: uppercase;
   background-color: #F2F2F2;
+  padding: 9px 22px 8px 23px;
+}
+
+.raiting-star {
+  margin: 0;
 }
 
 .pagination-container {
@@ -564,11 +596,12 @@ body {
 }
 
 .pagination-link {
-  display: block;
+  display: flex;
   box-sizing: border-box;
   width: 60px;
   height: 60px;
-  padding: 12px 24px;
+  align-items: center;
+  justify-content: center;
   color: #ffffff;
   background-color: #82B3D3;
   text-decoration: none;
