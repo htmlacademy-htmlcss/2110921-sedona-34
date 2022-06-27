@@ -66,17 +66,23 @@
               <ul class="catalog-filter-list">
                 <li class="catalog-filter-item">
                   <label class="control">
-                    <input class="control-input" type="checkbox" name="swimming-pool" checked>Бассейн
+                    <input class="visually-hidden control-input" type="checkbox" name="swimming-pool" checked>
+                    <span class="control-mark"></span>
+                    <span class="control-label">Бассейн</span>
                   </label>
                 </li>
                 <li class="catalog-filter-item">
                   <label class="control">
-                    <input class="control-input" type="checkbox" name="parking" checked>Парковка
+                    <input class="visually-hidden control-input" type="checkbox" name="parking" checked>
+                    <span class="control-mark"></span>
+                    <span class="control-label">Парковка</span>
                   </label>
                 </li>
                 <li class="catalog-filter-item">
                   <label class="control">
-                    <input class="control-input" type="checkbox" name="wi-fi">Wi-Fi
+                    <input class="visually-hidden control-input" type="checkbox" name="wi-fi">
+                    <span class="control-mark"></span>
+                    <span class="control-label">Wi-Fi</span>
                   </label>
                 </li>
               </ul>
@@ -86,23 +92,53 @@
               <ul class="catalog-filter-list">
                 <li class="catalog-filter-item">
                   <label class="control">
-                    <input class="control-input" type="radio" name="accommodation-type" value="hotel" checked>Гостиница
+                    <input class="visually-hidden control-input" type="radio" name="accommodation-type" value="hotel"
+                      checked>
+                    <span class="control-mark"></span>
+                    <span class="control-label">Гостиница</span>
                   </label>
                 </li>
                 <li class="catalog-filter-item">
                   <label class="control">
-                    <input class="control-input" type="radio" name="accommodation-type" value="motel">Мотель
+                    <input class="visually-hidden control-input" type="radio" name="accommodation-type" value="motel">
+                    <span class="control-mark"></span>
+                    <span class="control-label">Мотель</span>
                   </label>
                 </li>
                 <li class="catalog-filter-item">
                   <label class="control">
-                    <input class="control-input" type="radio" name="accommodation-type" value="apartments">Апартаменты
+                    <input class="visually-hidden control-input" type="radio" name="accommodation-type"
+                      value="apartments">
+                    <span class="control-mark"></span>
+                    <span class="control-label">Апартаменты</span>
                   </label>
                 </li>
               </ul>
             </fieldset>
             <fieldset class="catalog-filter-group catalog-filter-group-cost">
               <legend class="catalog-filter-title">Стоимость, ₽:</legend>
+              <div class="range">
+                <div class="range-wrapper-inputs">
+                  <label class="catalog-filter-label">
+                    <input class="range-input range-input-from" type="number" value="0" name="min-price">
+                    <span>от</span>
+                  </label>
+                  <label class="catalog-filter-label">
+                    <input class="range-input range-input-to" type="number" value="9000" name="max=price">
+                    <span>до</span>
+                  </label>
+                </div>
+                <div class="range-scale">
+                  <div class="range-bar" style="left:0px; width:227px">
+                    <button type="button" class="range-toggle toggle-min">
+                      <span class="visually-hidden">Изменить минимальную стоимость.</span>
+                    </button>
+                    <button type="button" class="range-toggle toggle-max">
+                      <span class="visually-hidden">Изменить максимальную стоимость.</span>
+                    </button>
+                  </div>
+                </div>
+              </div>
             </fieldset>
             <div class="function-buttons">
               <button class="button button-apply" type="submit">Применить</button>
@@ -115,11 +151,13 @@
         <div class="search-result">
           <p>Найдено гостиниц: 38</p>
         </div>
-        <select class="select-control" aria-label="Сортировка">
-          <option value="popular">Сначала популярные</option>
-          <option value="cheap">Сначала дешёвые</option>
-          <option value="expensive">Сначала дорогие</option>
-        </select>
+        <div class="select">
+          <select class="select-control" aria-label="Сортировка">
+            <option value="popular">Сначала популярные</option>
+            <option value="cheap">Сначала дешёвые</option>
+            <option value="expensive">Сначала дорогие</option>
+          </select>
+        </div>
         <a href="#" class="button-present button-present-cards current">
           <span class="visually-hidden">Показать несколько карточек</span>
         </a>
@@ -224,11 +262,13 @@
           </ul>
           <form class="show-result" action="https://echo.htmlacademy.ru/" method="get">
             <label for="number-items">Гостиниц на странице:</label>
-            <select class="show-result-change" id="number-items">
-              <option value="four">4</option>
-              <option value="eight">8</option>
-              <option value="sixteen">16</option>
-            </select>
+            <div class="select-show-result">
+              <select class="show-result-change" id="number-items">
+                <option value="four">4</option>
+                <option value="eight">8</option>
+                <option value="sixteen">16</option>
+              </select>
+            </div>
           </form>
         </div>
       </div>
