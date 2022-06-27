@@ -185,6 +185,56 @@
         </a>
       </div>
     </footer>
+    <div class="modal-container">
+      <div class="modal modal-search">
+        <button class="modal-close-button">
+          <span class="visually-hidden">Закрыть</span>
+          <span class="modal-close"></span>
+        </button>
+        <section class="modal-content">
+          <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
+          <div class="modal-select accommodation-date">
+            <label class="planned-arrival-date" for="arrival-date-field"> Дата Заезда:</label>
+            <input class="planned-date input-field" id="arrival-date-field" name="booking-date" value="27 апреля 2020"
+              required>
+            <span class="modal-commet error">Мы не можем отправить вас в прошлое.</span>
+          </div>
+          <div class="modal-select accommodation-date">
+            <label class="planned-departure-date" for="departure-date-field"> Дата Заезда:</label>
+            <input class="planned-date input-field" id="departure-date-field" name="booking-date"
+              value="1 сентября 2021" required>
+            <span class="modal-commet">На эти даты есть свободные номера. Пока есть.</span>
+          </div>
+          <div class="number-of-people">
+            <label class="adults" for="number-of-adults">Взрослые:</label>
+            <div class="modal-field-wrapper">
+              <button class="modar-form-button button-decrease">
+                <span class="visually-hidden">Меньше</span>
+              </button>
+              <input class="input-field" id="number-of-adults" name="quantity" value="2" type="number" min="1" required>
+              <button class="modar-form-button button-increase">
+                <span class="visually-hidden">Больше</span>
+              </button>
+            </div>
+            <label class="children" for="number-of-children">Дети:</label>
+            <div class="modal-field-wrapper">
+              <button class="modar-form-button button-decrease">
+                <span class="visually-hidden">Меньше</span>
+              </button>
+              <input class="input-field" id="number-of-children" name="quantity" value="1" type="number" min="0"
+                required>
+              <button class="modar-form-button button-increase">
+                <span class="visually-hidden">Больше</span>
+              </button>
+            </div>
+          </div>
+
+          <button class="button modal-search">Найти</button>
+
+        </section>
+
+      </div>
+    </div>
   </div>
 </body>
 
