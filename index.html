@@ -34,6 +34,7 @@
           <li class="user-navigation-item">
             <a class="navigation-link navigation-link-favorite" href="#">
               <span class="visually-hidden">Избранное</span>
+              <span class="navigation-favorites-count">12</span>
             </a>
           </li>
           <li class="user-navigation-item">
@@ -185,7 +186,7 @@
         </a>
       </div>
     </footer>
-    <div class="modal-container">
+    <div class="modal-container modal-container-close">
       <div class="modal modal-search">
         <button class="modal-close-button">
           <span class="visually-hidden">Закрыть</span>
@@ -222,7 +223,15 @@
               </div>
             </div>
             <div class="count-wrapper count-wrapper-children">
-              <label class="modal-label-text children" for="number-of-children">Дети:</label>
+              <span class="children">
+                <label class="modal-label-text children" for="number-of-children">Дети:</label>
+                <span class="tooltip">
+                  <button class="tooltip-toggle" type="button" aria-labelledby="tooltip-label"></button>
+                  <span class="tooltip-text" role="tooltip" id="tooltip-label">Укажите количество детей, которые будут с
+                    вами, возраст которых от 6 до 18
+                    лет. Дети до 6 лет размещаются бесплатно.</span>
+                </span>
+              </span>
               <div class="modal-field-wrapper">
                 <button class="modal-form-button button-decrease">
                   <span class="visually-hidden">Меньше</span>
