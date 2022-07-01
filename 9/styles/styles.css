@@ -359,7 +359,7 @@ color: rgba(255, 255, 255, 0.3);
   padding-top: 52px;
   background-image: url("../images/background-welcome.jpg");
   background-color: rgba(131, 179, 211, 0.2);
-  background-size: 100% auto;
+  background-size: cover;
   background-repeat: no-repeat;
   padding-bottom: 82px;
 }
@@ -1253,62 +1253,46 @@ height: 25px;
 
 /*Control*/
 .control {
-  position: relative;
-  display: block;
-  padding-left: 49px;
+  display: flex;
   cursor: pointer;
 }
 
 /*Mark*/
 .control-mark {
-  position: absolute;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
   width: 20px;
   height: 20px;
-  left: 0;
+  margin-left: 0;
   border: none;
   border-radius: 4px;
   background-color: #ffffff;
+  margin-right: 19px;
 }
 
-.control-input[type="radio"]:not(:checked):hover + .control-mark {
-  box-sizing: border-box;
-  border:  3px solid red;
-  outline: none;
-}
-
-.control:hover .control-mark {
+.control-input[type="checkbox"]:hover + .control-mark {
   background-color: rgba(255, 255, 255, 0.6);
 }
 
-.control:active .control-mark {
-  background-color: rgba(255, 255, 255, 0.3);
-}
-
 .control-input[type="checkbox"]:focus + .control-mark {
-  /* background-color: rgba(255, 255, 255, 0.6); */
-  background-color: red;
+  background-color: rgba(255, 255, 255, 0.6);
+  outline: 3px solid #83B3D3;
 }
 
-
-.control:focus .control-mark,
-.control:focus-within .control-mark {
-  outline: 3px solid #83B3D3;
+.control-input[type="checkbox"]:active + .control-mark {
+  background-color: rgba(255, 255, 255, 0.3);
 }
 
 
 .control-input[type="checkbox"]:checked + .control-mark::before {
-  position: absolute;
   display: block;
   content: "";
   width: 12px;
   height: 10px;
   background-image: url("../images/tick.svg");
   background-repeat: no-repeat;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  /* left: 4px;
-  top: 5px; */
 }
 
 /*Radio*/
@@ -1316,10 +1300,14 @@ height: 25px;
   border-radius: 50%;
 }
 
+.control-input[type="radio"]:focus + .control-mark {
+  outline: 3px solid #83B3D3;
+}
+
+
 .control-input[type="radio"]:checked + .control-mark::before {
-  position: absolute;
   content: "";
-  width: 9px;
+  width: 10px;
   height: 10px;
   left: 5px;
   top: 5px;
