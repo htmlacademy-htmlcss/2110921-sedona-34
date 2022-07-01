@@ -261,6 +261,7 @@ color: rgba(255, 255, 255, 0.3);
   flex-wrap: wrap;
   margin-left: auto;
   align-items: center;
+  justify-content: flex-end;
 }
 
 .navigation-link {
@@ -1003,6 +1004,7 @@ height: 25px;
 }
 
 .tooltip-toggle {
+  position: relative;
   width: 25px;
   height: 25px;
   margin: 0;
@@ -1017,12 +1019,14 @@ height: 25px;
   display: block;
   position: absolute;
   content: "";
-  width: 2px;
+  width: 1px;
   height: 10px;
   background-image: url("../images/info.svg");
   background-repeat: no-repeat;
-  left: 12px;
-  top: 8px;
+  right: 50%;
+  transform: translateX(-50%);
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 .tooltip-toggle:hover {
@@ -1164,7 +1168,7 @@ height: 25px;
   padding-right: 16px;
   background-image: url("../images/arrow-breadcrumbs.svg");
   background-repeat: no-repeat;
-  background-position: right 1px;
+  background-position: right center;
 }
 
 /* Link */
@@ -1172,13 +1176,13 @@ height: 25px;
   color: inherit;
   }
 
-.breadcrumbs-link:hover {
+.breadcrumbs-item:not(:last-child):hover {
   color: rgba(255, 255, 255, 0.6);
   }
 
-.breadcrumbs-link:active {
-  color: rgba(255, 255, 255, 0.3)
-}
+.breadcrumbs-item:not(:last-child):active {
+  color: rgba(255, 255, 255, 0.3);
+  }
 
 .breadcrumbs-link-main::before{
   display: block;
@@ -1266,6 +1270,12 @@ height: 25px;
   background-color: #ffffff;
 }
 
+.control-input[type="radio"]:not(:checked):focus + .control-mark {
+  box-sizing: border-box;
+  border:  3px solid red;
+  outline: none;
+}
+
 .control:hover .control-mark {
   background-color: rgba(255, 255, 255, 0.6);
 }
@@ -1274,11 +1284,14 @@ height: 25px;
   background-color: rgba(255, 255, 255, 0.3);
 }
 
+
+
 .control:focus .control-mark,
 .control:focus-within .control-mark {
   background-color: rgba(255, 255, 255, 0.6);
   outline: 3px solid #83B3D3;
 }
+
 
 .control-input[type="checkbox"]:checked + .control-mark::before {
   position: absolute;
@@ -1307,6 +1320,12 @@ height: 25px;
   background-color: #3F5E72;
   border-radius: 50%;
 }
+
+/* .control-input[type="radio"]:not(:checked):focus + .control-mark {
+  box-sizing: border-box;
+  border:  3px solid red;
+  outline: none;
+} */
 
 
 /*Range*/
@@ -1610,19 +1629,19 @@ box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
 }
 
 .raiting-star-four {
-  width: calc(18px * 4 + 9px);
+  width: 81px;
   background-image: url("../images/rating-star.svg");
   background-repeat: space;
 }
 
 .raiting-star-three {
-  width: calc(18px * 3 + 6px);
+  width: 60px;
   background-image: url("../images/rating-star.svg");
   background-repeat: space;
 }
 
 .raiting-star-two {
-  width: calc(18px * 2 + 3px);
+  width: 39px;
   background-image: url("../images/rating-star.svg");
   background-repeat: space;
 
