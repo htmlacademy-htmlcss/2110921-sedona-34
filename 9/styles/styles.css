@@ -63,7 +63,7 @@ body {
 .button-navigation {
   background-color: #756157;
   padding: 9px 34px 8px;
-  margin: 14px 0 14px 20px;
+  margin: 14px 0 14px 18px;
 }
 
 .button-navigation:hover {
@@ -300,21 +300,30 @@ color: rgba(255, 255, 255, 0.3);
   color: rgba(255, 255, 255, 0.3);
 }
 
-
 .user-navigation .navigation-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  width: 42px;
+  height: 66px;
+  z-index: -1px;
+}
+
+.user-navigation .navigation-link-favorite {
+  padding-right: 2px;
   position: relative;
-  min-width: 18px;
-  min-height: 18px;
-  padding-top: 20px;
-  padding-left: 12px;
-  padding-right: 12px;
+}
+
+.user-navigation .navigation-link-search{
+  width: 40px;
 }
 
 .navigation-favorites-count {
   min-width: 20px;
   min-height: 20px;
   background-color: #7DB54F;
-  border-radius: 10px;
+  border-radius: 50%;
   font-weight: 400;
   font-size: 10px;
   line-height: 13px;
@@ -324,14 +333,14 @@ color: rgba(255, 255, 255, 0.3);
   padding: 3px 5px;
   position: absolute;
   top: 15px;
-  left: 24px;
+  right: 0;
   box-sizing: border-box;
 }
 
 
+
 .navigation-link-search::before {
   display: block;
-  position: absolute;
   content: "";
   width: 18px;
   height: 19px;
@@ -356,6 +365,9 @@ color: rgba(255, 255, 255, 0.3);
   mask-repeat: no-repeat;
 }
 
+.user-navigation-item:not(:last-child) {
+  margin-right: 2px;
+}
 
 .intro {
   position: relative;
@@ -890,6 +902,7 @@ color: rgba(255, 255, 255, 0.3);
   border: none;
   border-radius: 4px;
   appearance: none;
+  -moz-appearance: textfield;
   width: 100%;
   margin: 0;
 }
@@ -901,20 +914,23 @@ color: rgba(255, 255, 255, 0.3);
 }
 
 
+
 .input-field:hover {
   background-color: #E6E6E6;
 }
 
-.input-field:active,
-.input-field:active:not(:placeholder-shown) {
+.input-field:active {
+  background-color: #E6E6E6;
+  outline: 3px solid #83B3D3;
+}
+
+.input-field:focus,
+.input-field:focus:not(:placeholder-shown) {
   background-color: #FFFFFF;
   box-shadow: inset 0 0 0 2px #000000;
 }
 
-.input-field:focus {
-  background-color: #E6E6E6;
-  outline: 3px solid #83B3D3;
-}
+
 
 .planned-date {
   width: 420px;
@@ -1388,6 +1404,8 @@ box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
   color: #FFFFFF;
   background-color: transparent;
   border: 2px solid #FFFFFF;
+  appearance: none;
+  -moz-appearance: textfield;
 }
 
 .range-input-from {
@@ -1417,14 +1435,16 @@ box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
 }
 
 .range-input:active {
-  background-color: #756257;
-}
-
-.range-input:focus {
   box-shadow: 0px 0px 0px 3px #81B3D2,
   inset 0 0 0 3px #81B3D2;
   outline: none;
 }
+
+.range-input:focus{
+  background-color: #756257;
+}
+
+
 
 .search-result-show {
   display: flex;
