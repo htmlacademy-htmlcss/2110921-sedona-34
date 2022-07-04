@@ -264,6 +264,7 @@ color: rgba(255, 255, 255, 0.3);
   justify-content: flex-end;
 }
 
+
 .navigation-link {
   display: block;
   position: relative;
@@ -275,8 +276,6 @@ color: rgba(255, 255, 255, 0.3);
   text-align:center;
   text-decoration: none;
   text-transform: capitalize;
-  /* padding-bottom: 19px;
-  padding-top: 19px; */
   padding: 19px 0;
 }
 
@@ -329,10 +328,12 @@ color: rgba(255, 255, 255, 0.3);
   box-sizing: border-box;
 }
 
+
 .navigation-link-search::before {
   display: block;
+  position: absolute;
   content: "";
-  width: 19px;
+  width: 18px;
   height: 19px;
   background-color: currentColor;
   -webkit-mask-image: url("../images/search.svg");
@@ -342,10 +343,10 @@ color: rgba(255, 255, 255, 0.3);
 }
 
 
-
 .navigation-link-favorite::before {
   display: block;
   content: "";
+  position: relative;
   width: 19px;
   height: 17px;
   background-color: currentColor;
@@ -354,6 +355,7 @@ color: rgba(255, 255, 255, 0.3);
   -webkit-mask-repeat: no-repeat;
   mask-repeat: no-repeat;
 }
+
 
 .intro {
   position: relative;
@@ -897,6 +899,7 @@ color: rgba(255, 255, 255, 0.3);
   appearance: none;
   margin: 0;
 }
+
 
 .input-field:hover {
   background-color: #E6E6E6;
