@@ -275,8 +275,9 @@ color: rgba(255, 255, 255, 0.3);
   text-align:center;
   text-decoration: none;
   text-transform: capitalize;
-  padding-bottom: 19px;
-  padding-top: 19px;
+  /* padding-bottom: 19px;
+  padding-top: 19px; */
+  padding: 19px 0;
 }
 
 .navigation-link-current {
@@ -884,10 +885,11 @@ color: rgba(255, 255, 255, 0.3);
   font: inherit;
   font-weight: 400;
   background-color: #F2F2F2;
-  border: 2px solid transparent;
+  border: none;
   border-radius: 4px;
   appearance: none;
   width: 100%;
+  margin: 0;
 }
 
 .input-field::-webkit-outer-spin-button,
@@ -903,7 +905,7 @@ color: rgba(255, 255, 255, 0.3);
 .input-field:active,
 .input-field:active:not(:placeholder-shown) {
   background-color: #FFFFFF;
-  border: 2px solid #000000;
+  box-shadow: inset 0 0 0 2px #000000;
 }
 
 .input-field:focus {
@@ -913,7 +915,7 @@ color: rgba(255, 255, 255, 0.3);
 
 .planned-date {
   width: 420px;
-  padding: 14px 19px 15px;
+  padding: 15px 19px 14px;
   padding-right: 53px;
 }
 
@@ -951,22 +953,28 @@ color: rgba(255, 255, 255, 0.3);
 
 .modal-field-wrapper {
   position: relative;
-  display: flex;
   width: 133px;
   margin-left: auto;
 }
 
 .count-field {
   text-align: center;
+  padding-left: 45px;
+  padding-right: 45px;
 }
 
 .modal-form-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   background-color: transparent;
   border: none;
   position: absolute;
+  padding: 0;
   border-radius: 4px;
   width: 25px;
   height: 25px;
+  box-sizing: border-box;
   cursor: pointer;
   opacity: 0.3;
 }
@@ -981,7 +989,8 @@ color: rgba(255, 255, 255, 0.3);
 
 .modal-form-button:focus {
   opacity: 1;
-  outline: 3px solid #83B3D3;
+  /* outline: 3px solid #83B3D3; */
+  border: 3px solid #83B3D3;
 }
 
 .button-decrease {
@@ -1076,12 +1085,9 @@ height: 25px;
 
 .button-decrease::before {
   content: "";
-  position: absolute;
   background-color: #000000;
-  left: 6px;
-  top: 12px;
   width: 13px;
-  height: 13px;
+  height: 1px;
   -webkit-mask-image: url("../images/decrease-button.svg");
   mask-image: url("../images/decrease-button.svg");
   -webkit-mask-repeat: no-repeat;
@@ -1090,10 +1096,7 @@ height: 25px;
 
 .button-increase::before {
   content: "";
-  position: absolute;
   background-color: #000000;
-  right: 5px;
-  top: 6px;
   width: 13px;
   height: 13px;
   -webkit-mask-image: url("../images/increase-button.svg");
@@ -1306,11 +1309,10 @@ height: 25px;
 
 
 .control-input[type="radio"]:checked + .control-mark::before {
+  display: block;
   content: "";
   width: 10px;
   height: 10px;
-  left: 5px;
-  top: 5px;
   background-color: #3F5E72;
   border-radius: 50%;
 }
