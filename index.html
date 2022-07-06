@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8" />
   <title>HTML Academy: Седона</title>
-  <link rel="icon" href="images/favicon.ico">
+  <link rel="icon" type="image/png" size="32x32" href="images/favicon-32x32.png">
   <link rel="stylesheet" href="styles/styles.css" />
 </head>
 
@@ -141,7 +141,7 @@
         </p>
         <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
           <label class="visually-hidden" for="email-field">Email</label>
-          <input class="field" placeholder="Ваш e-mail" id="email-field" type="email" name="subscribe-email" required />
+          <input class="field" placeholder="Ваш e-mail" id="email-field" type="email" name="subscribe-email" required>
           <button class="button button-subscribe" type="submit">
             Подписаться
           </button>
@@ -211,7 +211,7 @@
           </div>
           <div class="number-of-people">
             <div class="count-wrapper count-wrapper-adults">
-              <label class="modal-label-text adults" for="number-of-adults">Взрослые:</label>
+              <label class="modal-label-text" for="number-of-adults">Взрослые:</label>
               <div class="modal-field-wrapper">
                 <button class="modal-form-button button-decrease">
                   <span class="visually-hidden">Меньше</span>
@@ -225,7 +225,7 @@
             </div>
             <div class="count-wrapper count-wrapper-children">
               <span class="children">
-                <label class="modal-label-text children" for="number-of-children">Дети:</label>
+                <label class="modal-label-text" for="number-of-children">Дети:</label>
                 <span class="tooltip">
                   <button class="tooltip-toggle" type="button" aria-labelledby="tooltip-label"></button>
                   <span class="tooltip-text" role="tooltip" id="tooltip-label">Укажите количество детей, которые будут с
@@ -246,7 +246,7 @@
             </div>
           </div>
 
-          <button class="button modal-search-button">Найти</button>
+          <button class="button modal-search-button" type="submit">Найти</button>
 
         </section>
 
