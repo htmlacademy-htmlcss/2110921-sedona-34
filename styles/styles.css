@@ -418,7 +418,7 @@ body {
   position: relative;
   padding-top: 51px;
   background-image: url("../images/background-welcome.jpg");
-  background-color: rgba(131, 179, 211, 0.2);
+  background-color: rgba(131, 179, 211, 0.5);
   background-size: cover;
   background-repeat: no-repeat;
   padding-bottom: 82px;
@@ -646,7 +646,7 @@ body {
   padding-top: 94px;
   padding-bottom: 94px;
   background-image: url("../images/background-subscribe.jpg");
-  background-color: #68a2ca;
+  background-color: #3f5e72;
   background-size: cover;
   background-repeat: no-repeat;
   color: #ffffff;
@@ -1321,7 +1321,7 @@ body {
 
 .inner-hotel-filter {
   background-image: url("../images/filter-background.jpg");
-  background-color: #82b3d3;
+  background-color: #3f5e72;
   background-size: cover;
   background-repeat: no-repeat;
   color: #ffffff;
@@ -1871,6 +1871,7 @@ body {
   line-height: 20px;
   border-radius: 4px;
   text-transform: uppercase;
+  color: #333333;
   background-color: #f2f2f2;
   padding: 9px 22px 8px 23px;
 }
