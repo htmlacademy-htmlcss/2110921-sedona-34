@@ -1871,6 +1871,7 @@ body {
   line-height: 20px;
   border-radius: 4px;
   text-transform: uppercase;
+  color: #333333;
   background-color: #f2f2f2;
   padding: 9px 22px 8px 23px;
 }
