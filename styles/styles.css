@@ -418,7 +418,7 @@ body {
   position: relative;
   padding-top: 51px;
   background-image: url("../images/background-welcome.jpg");
-  background-color: rgba(131, 179, 211, 0.2);
+  background-color: rgba(131, 179, 211, 0.5);
   background-size: cover;
   background-repeat: no-repeat;
   padding-bottom: 82px;
